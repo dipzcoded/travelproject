@@ -280,11 +280,19 @@ nav.nav {
     border-bottom-left-radius: 2rem;
     backdrop-filter: blur(7px);
     box-shadow: 0 5px 30px rgba(33, 40, 50, 0.34);
-    transition: all 0.8s ease-in-out;
-    -webkit-transition: all 0.8s ease-in-out;
-    -moz-transition: all 0.8s ease-in-out;
-    -ms-transition: all 0.8s ease-in-out;
-    -o-transition: all 0.8s ease-in-out;
+    transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+  }
+
+  .nav-item {
+    opacity: 0;
+  }
+
+  .nav .btn {
+    opacity: 0;
   }
 
   .nav-list li a.nav-link {
@@ -341,6 +349,7 @@ nav.nav {
 
   .close-menu {
     color: #181e4b;
+    font-size: 2.8rem !important;
   }
 
   .showcase-text h1 {
@@ -350,6 +359,14 @@ nav.nav {
 
 nav.nav.show {
   right: 0;
+}
+
+.open-menu.notShowMenu {
+  display: none;
+}
+
+.close-menu.notShowMenu {
+  display: block !important;
 }
 
 @media screen and (max-width: 680px) {
@@ -406,7 +423,7 @@ nav.nav.show {
   }
 }
 
-@keyframes navSlide {
+@keyframes slideX {
   from {
     opacity: 0;
     transform: translateX(50px);
