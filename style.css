@@ -481,7 +481,7 @@ nav.nav {
 }
 
 .book .book-containerflex .summary-containerflex {
-  margin-top: 3rem;
+  margin-top: 3.6rem;
 }
 
 .book .book-containerflex .summary-containerflex .summary-listitem {
@@ -511,7 +511,19 @@ nav.nav {
   > div:last-child
   h3 {
   font-weight: 600;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.book
+  .book-containerflex
+  .summary-containerflex
+  .summary-listitem
+  > div:last-child
+  p {
+  width: 75%;
+  line-height: 1.5;
+  font-size: 1.2rem;
 }
 
 /* responsive */
