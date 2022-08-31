@@ -315,6 +315,72 @@ nav.nav {
   font-size: 1.6rem;
 }
 
+.destination {
+  padding: 6rem;
+}
+
+.destination .destination-smallheading {
+  font-weight: 600;
+  font-size: 1.8rem;
+  /* color: #5e6282; */
+  text-align: center;
+}
+
+.destination .destination-main {
+  font-size: 3.6rem;
+  text-align: center;
+  font-weight: 700;
+  color: #14183e;
+  margin-top: 2rem;
+}
+
+.destination .destination-containerflex {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 4rem;
+}
+
+.destination .destination-containerflex .destination-flexitem {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  background-color: #212832;
+}
+
+.destination .destination-containerflex .destination-flexitem .bg-img {
+  min-height: 400px;
+  /*min-width: 300px;
+  */ /*background-image: url("./image/alejandro-cartagena-KRzGB1Dd19Q-unsplash.jpg");
+  */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  filter: saturate(1);
+  -webkit-filter: saturate(1);
+}
+
+.destination
+  .destination-containerflex
+  .destination-flexitem.destflex-1
+  .bg-img {
+  background-image: url("./image/l-a-l-a-s-z-a-S0hS0HfH_B8-unsplash\ \(1\).jpg");
+  /* backdrop-filter: ; */
+}
+
+.destination
+  .destination-containerflex
+  .destination-flexitem.destflex-2
+  .bg-img {
+  background-image: url("./image/sabrina-mazzeo-g-krQzQo9mI-unsplash.jpg");
+}
+
+.destination
+  .destination-containerflex
+  .destination-flexitem.destflex-3
+  .bg-img {
+  background-image: url("./image/alejandro-cartagena-KRzGB1Dd19Q-unsplash.jpg");
+}
+
 /* responsive */
 @media screen and (max-width: 1050px) {
   html {
