@@ -30,7 +30,11 @@ a {
   font-family: "Roboto", sans-serif;
 }
 
-p {
+p,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   color: #5e6282;
@@ -238,6 +242,63 @@ nav.nav {
 
 .btn-flex p {
   margin-left: 1rem;
+}
+
+/* category */
+.category {
+  padding: 6rem;
+}
+
+.category .category-smallheading {
+  font-weight: 600;
+  font-size: 1.8rem;
+  /* color: #5e6282; */
+  text-align: center;
+}
+
+.category .category-main {
+  font-size: 3.6rem;
+  text-align: center;
+  font-weight: 700;
+  color: #14183e;
+  margin-top: 2rem;
+}
+
+.category .category-containerflex {
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(24.5rem, 1fr));
+  grid-gap: 3rem;
+}
+
+.category .category-containerflex .category-flexitem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.category .category-containerflex .category-flexitem img {
+  /* width: 100px; */
+  display: block;
+  width: 90px;
+  margin: 0 auto;
+  /* wid */
+  /* object-fit: contain; */
+}
+
+.category .category-containerflex .category-flexitem h3 {
+  font-weight: 600;
+  color: #1e1d4c;
+  margin: 2rem 0;
+  /* margin-bottom: 2.2rem; */
+  font-size: 2rem;
+}
+
+.category .category-containerflex .category-flexitem p {
+  line-height: 1.6;
+  font-size: 1.6rem;
 }
 
 /* responsive */
