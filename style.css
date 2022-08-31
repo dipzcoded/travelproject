@@ -338,7 +338,7 @@ nav.nav {
   margin-top: 6rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-  grid-gap: 4rem;
+  grid-gap: 4.5rem;
 }
 
 .destination .destination-containerflex .destination-flexitem {
@@ -389,7 +389,8 @@ nav.nav {
   .destination-containerflex
   .destination-flexitem.destflex-3
   .bg-img {
-  background-image: url("./image/alejandro-cartagena-KRzGB1Dd19Q-unsplash.jpg");
+  background-image: url("./image/tom-podmore-QwTyazv-dyk-unsplash.jpg");
+  background-position: center bottom;
 }
 
 .destination .destination-containerflex .destination-flexitem .card {
@@ -403,6 +404,50 @@ nav.nav {
   > div:first-child {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.destination
+  .destination-containerflex
+  .destination-flexitem
+  .card
+  > div:first-child
+  h4 {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.destination
+  .destination-containerflex
+  .destination-flexitem
+  .card
+  > div:first-child
+  p {
+  font-size: 1.5rem;
+  /* font-weight: 500; */
+}
+
+.destination .destination-containerflex .destination-flexitem .card div.trip {
+  margin-top: 2.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.destination .destination-containerflex .destination-flexitem .card div.trip p {
+  margin-left: 1.4rem;
+}
+
+.destination
+  .destination-containerflex
+  .destination-flexitem
+  .card
+  div.trip
+  i.location {
+  font-size: 2rem !important;
+}
+
+.destination .destination-containerflex .destination-flexitem .card div.trip p {
+  font-size: 1.2rem;
 }
 
 /* responsive */
