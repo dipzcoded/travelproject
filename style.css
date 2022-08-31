@@ -272,11 +272,25 @@ nav.nav {
 }
 
 .category .category-containerflex .category-flexitem {
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   text-align: center;
+  transition: all 0.5s ease-in;
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+}
+
+.category .category-containerflex .category-flexitem:hover {
+  background-color: #fff;
+  box-shadow: 0 35px 25px rgba(0, 0, 0, 0.1);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  /* cursor: bl; */
 }
 
 .category .category-containerflex .category-flexitem img {
@@ -293,7 +307,7 @@ nav.nav {
   color: #1e1d4c;
   margin: 2rem 0;
   /* margin-bottom: 2.2rem; */
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 .category .category-containerflex .category-flexitem p {
