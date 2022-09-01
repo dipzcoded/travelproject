@@ -537,6 +537,11 @@ nav.nav {
   align-items: center;
 }
 
+.testy .testy-flexcontainer .details {
+  display: flex;
+  flex-direction: column;
+}
+
 .testy .testy-flexcontainer .details h3.testy-details-smallheading {
   font-weight: 600;
   font-size: 1.8rem;
@@ -554,6 +559,8 @@ nav.nav {
 .testy .testy-flexcontainer .details .circles {
   display: flex;
   margin-top: 4rem;
+  /* justify-self: center; */
+  /* align-self: flex-end; */
 }
 
 .testy .testy-flexcontainer .details .circles > div {
@@ -621,6 +628,19 @@ nav.nav {
 
 .testy .testy-flexcontainer .testy-comment .user-comment > div p {
   margin-top: 8px;
+}
+
+.partners {
+  padding: 6rem;
+}
+
+.partners .partners-flexcontainer {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-gap: 4rem;
+  align-items: center;
+  justify-content: center;
 }
 
 /* responsive */
