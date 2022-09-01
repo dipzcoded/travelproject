@@ -107,9 +107,27 @@ img#decore {
 .btn-secondary {
   background-color: #df6951;
 }
+
+.btn-gradient {
+  /* background-color: linear-gradient(); */
+  background: linear-gradient(
+    to right,
+    rgba(255, 148, 109, 1),
+    rgba(255, 125, 104, 1)
+  );
+}
+
+.btn.btn-gradient {
+  padding: 1.2rem 2.5rem;
+}
+
 .btn-rec {
   color: #f4f4f4;
   border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
 .btn-circle {
   border-radius: 4rem;
@@ -641,6 +659,74 @@ nav.nav {
   grid-gap: 4rem;
   align-items: center;
   justify-content: center;
+}
+
+.subscribe {
+  padding: 6rem;
+}
+
+.subscribe .subscribe-board {
+  background-color: rgba(233, 215, 249, 0.75);
+  padding: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 100px;
+  position: relative;
+}
+
+.subscribe .subscribe-board > img {
+  width: 70px;
+  position: absolute;
+  top: -20px;
+  right: -8px;
+}
+
+.subscribe .subscribe-board h3 {
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.subscribe .subscribe-board .newsletter {
+  display: flex;
+  align-items: stretch;
+  margin-top: 4rem;
+}
+
+.subscribe .subscribe-board .newsletter .newsletter-input {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  margin-right: 2rem;
+  padding: 2rem 3.5rem;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.subscribe .subscribe-board .newsletter .newsletter-input input {
+  border: 0;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  outline: 0;
+  /* width: 100%/; */
+}
+
+.subscribe .subscribe-board .newsletter .newsletter-input input::placeholder {
+  color: #39425d;
+}
+
+.subscribe .subscribe-board .newsletter .newsletter-input i.envelope {
+  font-size: 18px;
+  margin-right: 2rem;
 }
 
 /* responsive */
