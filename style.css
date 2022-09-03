@@ -94,6 +94,11 @@ img#decore {
   margin: 0 auto;
 }
 
+/* margin */
+/* .mt-4 {
+  margin-top: 18rem;
+} */
+
 /* btn */
 .btn {
   padding: 1rem 1.5rem;
@@ -559,12 +564,12 @@ nav.nav {
 }
 
 .testy {
-  padding: 4rem;
+  padding: 6rem;
 }
 
 .testy .testy-flexcontainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(42rem, 1fr));
   grid-gap: 5rem;
   align-items: center;
 }
@@ -622,6 +627,7 @@ nav.nav {
 
 .testy .testy-flexcontainer .testy-comment img {
   width: 68px;
+
   margin: 0 auto;
   /* z-index: 400; */
 }
@@ -870,11 +876,11 @@ nav.nav {
     border-bottom-left-radius: 2rem;
     backdrop-filter: blur(7px);
     box-shadow: 0 5px 30px rgba(33, 40, 50, 0.34);
-    transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition: all 1s ease-in-out;
-    -ms-transition: all 1s ease-in-out;
-    -o-transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
   }
 
   .nav-item {
@@ -945,6 +951,32 @@ nav.nav {
   .showcase-text h1 {
     font-size: 5rem;
   }
+
+  .book .book-containerflex .summary-containerflex .summary-listitem {
+    justify-content: center;
+  }
+
+  .book .book-containerflex .book-containerflex-summary > h3 {
+    text-align: center;
+  }
+
+  .book .book-containerflex .book-containerflex-summary > h2 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .book
+    .book-containerflex
+    .summary-containerflex
+    .summary-listitem
+    > div:last-child
+    p {
+    width: 100%;
+  }
+
+  .testy .testy-flexcontainer .details {
+    align-items: center;
+  }
 }
 
 nav.nav.show {
@@ -979,6 +1011,10 @@ nav.nav.show {
     margin: 0 auto;
   }
 
+  .destination .destination-containerflex {
+    grid-template-columns: 100%;
+  }
+
   /* nav.nav {
     width: 38%;
   } */
@@ -993,17 +1029,40 @@ nav.nav.show {
 @media screen and (max-width: 500px) {
   nav.nav {
     width: 70%;
-    height: 400px;
+    /* height: 400px; */
   }
 
   .showcase-img img {
     width: 100%;
+  }
+
+  .category .category-containerflex {
+    grid-template-columns: 100%;
+  }
+
+  .book .book-containerflex {
+    grid-template-columns: 100%;
+    grid-gap: 3rem;
+  }
+
+  .testy .testy-flexcontainer {
+    grid-template-columns: 100%;
+  }
+
+  .partners .partners-flexcontainer img.img-fix {
+    margin-top: 10rem;
   }
 }
 
 @media screen and (max-width: 420px) {
   nav.nav {
     height: 50%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .partners .partners-flexcontainer {
+    grid-template-columns: 100%;
   }
 }
 
