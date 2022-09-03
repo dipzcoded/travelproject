@@ -169,6 +169,10 @@ header {
   z-index: 10000;
 }
 
+header.sticky {
+  background-color: rgba(223, 105, 81, 0.35);
+}
+
 nav.nav {
   display: flex;
   align-items: center;
