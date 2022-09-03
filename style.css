@@ -31,6 +31,16 @@ a {
 }
 
 p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p,
 h3,
 h4,
 h5,
@@ -726,6 +736,62 @@ nav.nav {
 .subscribe .subscribe-board .newsletter .newsletter-input i.envelope {
   font-size: 18px;
   margin-right: 2rem;
+}
+
+.footer {
+  padding: 6rem;
+}
+
+.footer .footer-containerflex {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-around; */
+}
+
+.footer .footer-containerflex > div:first-child h2 {
+  font-size: 5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #181e4b;
+  margin-bottom: 1rem;
+}
+
+.footer .footer-containerflex > div:first-child p {
+  font-size: 1.2rem;
+  width: 85%;
+}
+
+.footer .footer-containerflex ul.footer-list {
+  flex: 1;
+  margin: 0 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  grid-gap: 4rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.footer .footer-containerflex ul.footer-list div.footer-item h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #080809;
+  margin-bottom: 3rem;
+}
+
+.footer .footer-containerflex ul.footer-list div.footer-item div li {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #5e6282;
+}
+
+.footer
+  .footer-containerflex
+  ul.footer-list
+  div.footer-item
+  div
+  li:not(:last-child) {
+  margin-bottom: 1.8rem;
 }
 
 /* responsive */
