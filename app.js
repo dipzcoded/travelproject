@@ -88,3 +88,47 @@ sr.reveal(
 );
 
 // book section
+sr.reveal(".book .book-containerflex .book-containerflex-summary > h3", {
+  delay: 300,
+});
+
+sr.reveal(".book .book-containerflex .book-containerflex-summary > h2", {
+  delay: 600,
+});
+
+sr.reveal(
+  ".book .book-containerflex .summary-containerflex .summary-listitem.listitem-1",
+  { delay: 1200 }
+);
+sr.reveal(
+  ".book .book-containerflex .summary-containerflex .summary-listitem.listitem-2",
+  { delay: 1600 }
+);
+sr.reveal(
+  ".book .book-containerflex .summary-containerflex .summary-listitem.listitem-3",
+  { delay: 2000 }
+);
+sr.reveal(".book .book-containerflex > div:last-child", { delay: 500 });
+
+// testimonials section
+sr.reveal(
+  ".testy .testy-flexcontainer .details h3.testy-details-smallheading",
+  { delay: 400 }
+);
+
+sr.reveal(".testy .testy-flexcontainer .details h2.testy-details-main", {
+  delay: 800,
+});
+
+sr.reveal(".testy .testy-flexcontainer .details .circles", { delay: 1200 });
+
+sr.reveal(".testy .testy-flexcontainer .testy-comment", { delay: 500 });
+
+// subscribe section
+sr.reveal(".subscribe .subscribe-board", { delay: 500 });
+sr.reveal(".subscribe .subscribe-board > img ", { delay: 800 });
+sr.reveal(".subscribe .subscribe-board h3", { delay: 1200 });
+sr.reveal(".subscribe .subscribe-board .newsletter", { delay: 1500 });
+
+// footer section
+sr.reveal(".footer .footer-containerflex > div:first-child h2", {});
