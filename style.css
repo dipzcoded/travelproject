@@ -66,24 +66,24 @@ button {
 
 img#shadow {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -100px;
+  left: -10px;
   width: 30%;
 }
 
 img#blod {
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 44%;
+  top: -200px;
+  right: -100px;
+  width: 55%;
   z-index: -1;
 }
 
 img#decore {
   position: absolute;
-  top: 29%;
-  left: 40%;
-  width: 45%;
+  top: 21%;
+  left: 30%;
+  width: 40%;
   z-index: -1;
 }
 
@@ -175,7 +175,7 @@ header {
 }
 
 header.sticky {
-  background-color: rgba(223, 105, 81, 0.35);
+  background-color: rgba(223, 105, 81, 0.25);
 }
 
 nav.nav {
@@ -844,6 +844,10 @@ nav.nav {
   html {
     font-size: 50%; /* 1rem = 8px */
   }
+
+  img#blod {
+    width: 68%;
+  }
 }
 
 @media screen and (max-width: 850px) {
@@ -864,6 +868,11 @@ nav.nav {
   .footer .footer-containerflex ul.footer-list {
     margin: 0 0;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  }
+
+  img#blod,
+  img#decore {
+    display: none;
   }
 }
 
