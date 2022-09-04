@@ -753,9 +753,12 @@ nav.nav {
 }
 
 .footer .footer-containerflex {
-  display: flex;
-  align-items: flex-start;
+  /* display: flex;
+  align-items: flex-start; */
   /* justify-content: space-around; */
+  display: grid;
+  grid-template-columns: min-content 1fr max-content;
+  grid-gap: 2rem;
 }
 
 .footer .footer-containerflex > div:first-child h2 {
@@ -772,7 +775,7 @@ nav.nav {
 }
 
 .footer .footer-containerflex ul.footer-list {
-  flex: 1;
+  /* flex: 1; */
   margin: 0 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
