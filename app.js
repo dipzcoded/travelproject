@@ -124,6 +124,9 @@ sr.reveal(".testy .testy-flexcontainer .details .circles", { delay: 1200 });
 
 sr.reveal(".testy .testy-flexcontainer .testy-comment", { delay: 500 });
 
+// partners section
+sr.reveal(".partners .partners-flexcontainer", { delay: 500 });
+
 // subscribe section
 sr.reveal(".subscribe .subscribe-board", { delay: 500 });
 sr.reveal(".subscribe .subscribe-board > img ", { delay: 800 });
@@ -131,4 +134,14 @@ sr.reveal(".subscribe .subscribe-board h3", { delay: 1200 });
 sr.reveal(".subscribe .subscribe-board .newsletter", { delay: 1500 });
 
 // footer section
-sr.reveal(".footer .footer-containerflex > div:first-child h2", {});
+sr.reveal(".footer .footer-containerflex > div:first-child h2", { delay: 400 });
+sr.reveal(".footer .footer-containerflex > div:first-child p", { delay: 800 });
+sr.reveal(".footer .footer-containerflex ul.footer-list", { delay: 1000 });
+sr.reveal(".footer .footer-containerflex .socials > div.socials-iconsflex", {
+  delay: 1200,
+});
+
+sr.reveal(".footer .footer-containerflex .socials h3", { delay: 1500 });
+sr.reveal(".footer .footer-containerflex .socials > div:last-child", {
+  delay: 1800,
+});
