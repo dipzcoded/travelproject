@@ -686,7 +686,7 @@ nav.nav {
 }
 
 .subscribe .subscribe-board {
-  background-color: rgba(233, 215, 249, 0.75);
+  background-color: rgba(233, 215, 249, 0.5);
   padding: 6rem;
   display: flex;
   flex-direction: column;
@@ -1024,6 +1024,19 @@ nav.nav.show {
   nav.nav {
     width: 40%;
   }
+
+  .subscribe .subscribe-board .newsletter {
+    flex-direction: column;
+  }
+
+  .subscribe .subscribe-board .newsletter .newsletter-input {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .btn.btn-gradient {
+    padding: 1.5rem 2.5rem;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1051,6 +1064,12 @@ nav.nav.show {
 
   .partners .partners-flexcontainer img.img-fix {
     margin-top: 10rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .subscribe .subscribe-board > img {
+    width: 52px;
   }
 }
 
